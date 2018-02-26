@@ -1,0 +1,6 @@
+#!/bin/bash
+
+sudo cp .bash_profile ~
+cp .vimrc ~
+
+echo "bash_profile and vimrc are up to date"
