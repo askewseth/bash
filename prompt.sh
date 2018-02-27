@@ -6,6 +6,7 @@ parse_git_branch() {
 }
 
 RED="\[\033[0;31m\]"
+WHITE="\[\033[0;37m\]"
 NOCOLOR="\e[0m"
 
-PS1="\W$RED \$(parse_git_branch)$NOCOLOR \$ "
+PS1="\W$WHITE \$(parse_git_branch)$NOCOLOR \$ "
