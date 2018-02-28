@@ -5,8 +5,9 @@ parse_git_branch() {
 	echo "("${ref#refs/heads/}")"
 }
 
-RED="\[\033[0;31m\]"
 WHITE="\[\033[0;37m\]"
 NOCOLOR="\e[0m"
 
-PS1="\W$WHITE \$(parse_git_branch)$NOCOLOR \$ "
+fill="--- "
+PS1='$fill \t\n'"\W$WHITE \$(parse_git_branch)$NOCOLOR \$ "
+
