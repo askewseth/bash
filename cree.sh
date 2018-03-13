@@ -18,10 +18,6 @@ alias manny='yamato'
 # # # help files
 alias consulhelp='cat ~/bin/consul_script.txt'
 
-# # # places I cd to a lot
-alias sc1='cd /Users/saskew/GoglandProjects/platform/sc1/src/bitbucket.org/iotp-sc1/'
-alias linkv2='cd /Users/saskew/GoglandProjects/platform/linkV2/src/git.creedev.com/'
-
 #my go exports
 export PATH=$PATH:/usr/local/go/bin
 export GOPATH=/Users/saskew/GoglandProjects/platform/linkV2
@@ -41,3 +37,10 @@ buildhydraajax() {
         env GOOS=linux GOARCH=amd64 go build -o $mypath/HydraLinux $mypath/HeavyWater.go
         scp $mypath/HydraLinux creeadmin@ajax:/tmp
 }
+
+
+# # # places I cd to a lot
+alias sc1='cd /Users/saskew/GoglandProjects/platform/sc1/src/bitbucket.org/iotp-sc1/; gopath sc1'
+alias linkv2='cd /Users/saskew/GoglandProjects/platform/linkV2/src/git.creedev.com/; gopath linkV2'
+alias platform='cd /Users/saskew/GoglandProjects/platform/'
+alias tests='cd /Users/saskew/GoglandProjects/platform/sc1/src/bitbucket.org/creesmartcast/platform-tests/; gopath sc1'
